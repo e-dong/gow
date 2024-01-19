@@ -1,5 +1,5 @@
 FROM ubuntu:22.04 as nvidia-installer
-
+RUN echo "hi"
 ARG NV_VERSION
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends curl ca-certificates kmod pkg-config libglvnd-dev vulkan-tools && \
